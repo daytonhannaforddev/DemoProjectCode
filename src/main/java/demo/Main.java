@@ -21,7 +21,7 @@ public class Main {
     static class RootHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws java.io.IOException {
-            String response = "Hello from CI/CD demo. V4 Edits, surprise!\n this is new code.";
+            String response = "Hello from CI/CD demo. V5 Edits, surprise!\nthis is new code.";
             exchange.sendResponseHeaders(200, response.getBytes().length);
             try (OutputStream os = exchange.getResponseBody()) {
                 os.write(response.getBytes());
